@@ -1,0 +1,11 @@
+ # Design Choices
+
+I designed the database to follow normalization and ensure data integrity:
+
+Users table stores basic user information. Each user has a unique ID and email.
+
+Events table stores details about events. Each event is linked to the user who created it (created_by).
+
+RSVPs table connects users and events with a status (Yes/No/Maybe). The (user_id, event_id) pair is unique, ensuring each user can RSVP only once per event.
+
+I also set foreign key constraints with ON DELETE CASCADE, so if a user or event is deleted, their RSVPs are automatically removed, keeping data consistent.
