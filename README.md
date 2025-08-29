@@ -32,7 +32,7 @@ Built with PostgreSQL / Supabase as backend.
 
 # 📂 Project Structure
 
-📦 supabase-event-app
+📦 supabase-event-app <br>
  ┣ 📜 supabase_event_schema.sql   # Schema (tables + constraints) <br>
  ┣ 📜 supabase_event_data.sql     # Sample data inserts <br>
  ┣ 📊 er_diagram.png              # ER diagram (Users, Events, RSVPs) <br>
