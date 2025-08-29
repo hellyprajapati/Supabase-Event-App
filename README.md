@@ -33,9 +33,9 @@ Built with PostgreSQL / Supabase as backend.
 # 📂 Project Structure
 
 📦 supabase-event-app
- ┣ 📜 supabase_event_schema.sql   # Schema (tables + constraints)
- ┣ 📜 supabase_event_data.sql     # Sample data inserts
- ┣ 📊 er_diagram.png              # ER diagram (Users, Events, RSVPs)
+ ┣ 📜 supabase_event_schema.sql   # Schema (tables + constraints) <b>
+ ┣ 📜 supabase_event_data.sql     # Sample data inserts <b>
+ ┣ 📊 er_diagram.png              # ER diagram (Users, Events, RSVPs) <b>
  ┗ 📜 README.md                   # Documentation
 
 ---
@@ -83,7 +83,7 @@ ORDER BY e.title;
 # 📊 ER Diagram
 
 <img width="2018" height="1472" alt="Image" src="https://github.com/user-attachments/assets/632f1545-dc09-4e98-8bb1-747e380f54d7" />
----
+
 
 # 🧹 Cascade Delete Example
 
@@ -110,99 +110,4 @@ Deploy on Vercel and connect to Supabase backend.
 
 ---
 
-# 🌐 Supabase Event App – Frontend
-
-This is a Next.js + Supabase app that connects with the event management database.
-It provides a minimal UI where:
-
- - 📅 Users can see all upcoming events
-
- - 🎟️ Users can RSVP (Yes / No / Maybe) to events
-
-# 📌 Features
-
- - Fetch events from Supabase PostgreSQL
-
- - Display events in a clean UI
-
- - Allow users to RSVP with a simple form
-
- - Deployed on Vercel, connected to Supabase
-
-# 🛠️ Tech Stack
-
- - Next.js 14 (React framework)
-
- - Supabase JS Client (database connection + auth)
-
- - TailwindCSS (styling)
-
- - Vercel (deployment)
-
-# 📂 Project Structure
-📦 frontend
- ┣ 📂 pages
- ┃ ┣ 📜 index.js         # Home page - list events
- ┃ ┣ 📜 rsvp.js          # RSVP page
- ┣ 📂 lib
- ┃ ┗ 📜 supabaseClient.js # Supabase connection
- ┣ 📜 package.json
- ┗ 📜 README.md
-
-# ⚡ Setup Instructions
-1. Clone Repository
-git clone https://github.com/your-username/supabase-event-app.git
-cd supabase-event-app/frontend
-
-2. Install Dependencies
-npm install
-
-3. Configure Supabase
-
-Create a .env.local file in the frontend/ folder:
-
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-
-4. Run Locally
-npm run dev
-
-
-Visit 👉 http://localhost:3000
-
-📊 Pages
-🏠 / – Events List
-
-Fetches events from events table
-
-Displays event title, description, date, city
-
-🎟️ /rsvp – RSVP Page
-
-Dropdown to select event
-
-Dropdown to select RSVP status (Yes / No / Maybe)
-
-Stores response in rsvps table
-
-# 🚀 Deployment
-1. Push to GitHub
-git add .
-git commit -m "Frontend setup"
-git push origin main
-
-2. Deploy on Vercel
-
-Go to Vercel
-
-Import GitHub repo
-
-Add environment variables (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY)
-
-Deploy 🎉
-
-📎 Deliverables
-
-GitHub Repo → https://github.com/your-username/supabase-event-app
-
-Live App on Vercel → https://supabase-event-app.vercel.app
+# Thank you for visit! 
