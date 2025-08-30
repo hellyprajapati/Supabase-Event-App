@@ -10,6 +10,8 @@ A simple event management database where:
 
 Built with PostgreSQL / Supabase as backend.
 
+Live Project Link : https://supabase.com/dashboard/project/blukqdxuukfxqtuldpaj/sql/e57781f9-f5d0-41c6-a1b0-bf14ca147257
+
 ---
 
 # 📌 Features
